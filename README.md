@@ -12,6 +12,7 @@ and hit a URL that looks like http://localhost:8090/MyAction?data=helloworld
 The server will look for MyAction.class in the data directory (/tmp in the example), instantiate it and execute its action method. MyAction.java is illustrated below (it implements the Funtion<String, String> functional interface). 
 
 
+`
 import java.util.function.*;
 
 public class MyAction implements Function<String, String> {
@@ -19,6 +20,7 @@ public class MyAction implements Function<String, String> {
         return data.toUpperCase();
     }
 }
+`
 
 The goal is to complete the code in plugandplay to achieve this 'plug and play' functionality. If you change the MyAction code, recompile it, the new version should get executed without requiring a restart of the server. 
 
