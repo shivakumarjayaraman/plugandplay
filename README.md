@@ -27,8 +27,9 @@ This code can be compiled on the command line using javac
 The goal is to complete the code in plugandplay to achieve this 'plug and play' functionality. If you change the MyAction code, recompile it, the new version should get executed without requiring a restart of the server. 
 
 
-HOW TO BUILD THIS CODE : mvn clean compile assembly:single
-HOW TO RUN THIS CODE : java -jar target/plugandplay-1.0-SNAPSHOT-jar-with-dependencies.jar
+`HOW TO BUILD THIS CODE : mvn clean compile assembly:single`
+
+`HOW TO RUN THIS CODE : java -jar target/plugandplay-1.0-SNAPSHOT-jar-with-dependencies.jar`
 
 
 The Maven command used to generate this project initially
